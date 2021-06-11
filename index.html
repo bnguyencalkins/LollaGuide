@@ -3,16 +3,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
-    <title>2021 Lollapollooza Guide</title>
+    <title>2021 Lollapalooza Guide</title>
     <meta name="author" content="Brandon Nguyen-Calkins">
-    <meta name="description" content="An unaffiliated guide to the 2021 Lollapollooza setlist.">
+    <meta name="description" content="An unaffiliated guide to the 2021 Lollapalooza setlist.">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">   
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">2021 Lollapollooza Guide</a>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">2021 Lollapalooza Guide</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,30 +39,35 @@
       </nav>
       
 </header>
-    <div class="container mt-4">
+    <div class="container-fluid mt-4" id="header">
         <h1>Get Ready for Lolla 2021</h1>
-
-        <div class="row">
-            <div class="col-sm-12 bg-secondary">
-                <h2>All Artists</h2>
-                <p>View all 2021 artists regardless of genre or day of performance.</p>
-            </div>
-        </div>
-
-        <div class="row mt-3">
-            <div class="col-sm-12 bg-primary">
-                <h2>By Day</h2>
-                <p>View artists organized by day of performance.</p>
-            </div>
-        </div>
-
-        <div class="row mt-3">
-            <div class="col-sm-12 bg-secondary">
-                <h2>By Genre</h2>
-                <p>View artists organized by music genre.</p>
-            </div>
-        </div>
+        <p>Get to know the performing artists maybe even just slightly better. This <i>unaffiliated</i> site helps organize the 2021 setlist into an interactive guide. Sort through artists by genre, performing day, or by name!</p>
+        <p>Tired of squinting at a photo to see artist names? Use this site instead! Made by two friends and is completely free (and frankly with little care).</p>
     </div>
+
+    <div class="container">
+        <div class="row homeSort">
+            <div class="col-sm-12">
+                <h2>All Artists</h2>
+                <p>View all 2021 artists regardless of genre or day of performance.<span><button class="btn-lg" onClick="location.href='all-artists.html'">All Artists</button></span></p>
+            </div>
+        </div>
+
+        <div class="row homeSort mt-3">
+            <div class="col-sm-12">
+                <h2>By Day</h2>
+                <p>View artists organized by day of performance. <span><button class="btn-lg" onClick="location.href='by-day.html'">By Day</button></span></p>
+            </div>
+        </div>
+
+        <div class="row homeSort mt-3">
+            <div class="col-sm-12">
+                <h2>By Genre</h2>
+                <p>View artists organized by music genre. <span><button class="btn-lg" onClick="location.href='by-genre.html'">By Genre</button></span></p>
+            </div>
+        </div>
+      </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

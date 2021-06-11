@@ -12,8 +12,8 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">2021 Lollapollooza Guide</a>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">2021 Lollapalooza Guide</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,24 +42,28 @@
 </header>
 <div class="container-fluid">
   <h1>Artists by Day</h1> 
-  <input type="text" placeholder="Search artists..." id="search">
+  <div class="input-group">
+    <input type="text" placeholder="Search artists..." id="search" onfocus="enterSearch()">
+    <div class="input-group-append">
+        <button class="btn-dark" onclick="filterSearch()">Search</button>
+    </div>
+  </div>
   <p>View the artists of 2021 Lollapolooza, sorted by day of performance. </p>
-  <ul>
-    <li>Performing day</li>
-    <li>Genre</li>
-    <li>Top hits</li>
-    <li>Latest release</li>
-  </ul>
-  <p class='text-muted'>Sorted A-Z</p>
+  <div class="btn-group">
+    <button class="btn" onclick="filterSelection('Thursday')">Thursday</button>
+    <button class="btn" onclick="filterSelection('Friday')">Friday</button>
+    <button class="btn" onclick="filterSelection('Saturday')">Saturday</button>
+    <button class="btn" onclick="filterSelection('Sunday')">Sunday</button>
+</div>
   <div class="row" id="listBlock">
       <div class="container-fluid" id="artistList">
       </div>
   </div>
   <br>
   <div class="container">
-      <h2 id="artistName">Test</h2>
-      <span>Day </span> <span>Genre</span>
-      <p>Sample text to describe the situation.</p>
+      <h2 id="artistName">Artist Name</h2>
+      <span id="fieldDay" class="badge badge-pill badge-primary">Day </span> <span id="fieldGenre" class="badge badge-pill badge-secondary">Genre</span>
+      <p>Click an artist to learn more about them.</p>
   </div>
 
 </div>
