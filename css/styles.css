@@ -1,0 +1,22 @@
+#artistList {
+    background-color: lightblue;
+}
+
+#listBlock {
+    height: 35vh;
+    overflow-y: scroll;
+}
+
+.nav-item:hover {
+    background-color: darkgray;
+}
+
+.btn {
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+    text-transform: capitalize;
+}
+.btn:active {
+    background-color: darkgray;
+}
