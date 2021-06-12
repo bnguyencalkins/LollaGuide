@@ -3,7 +3,7 @@
 }
 
 #listBlock {
-    height: 35vh;
+    height: 50vh;
     overflow-y: scroll;
 }
 
@@ -16,16 +16,24 @@
     border-radius: 15px;
 }
 
-header {
-    background-color: #00af9a;
-}
 
-.btn {
+.btn-cards {
     text-align: left;
-    padding: 5px;
-    margin: 5px;
+    padding: 20px;
+    margin: 8px;
     text-transform: uppercase;
     background-color: rgba(255,255,255,.5);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.btn-cards:active {
+    background-color: rgba(0, 0, 0,.1);
+}
+
+.btn-light {
+    padding: 5px;
+    margin: 5px;
 }
 .btn:active {
     background-color: #FF4439;
@@ -34,6 +42,12 @@ header {
 .btn-lg {
     background-color: #FF4439;
     color: white;
+}
+.btn-search {
+    color: white;
+    background-color: seagreen;
+    border: none;
+    border-radius: 5px;
 }
 
 .btn-lg:active {
