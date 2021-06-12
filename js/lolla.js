@@ -34,7 +34,7 @@ function displayResults(data) {
 
         //create tab-buttons
         buttonItem = document.createElement("Button");
-        buttonItem.classList.add("btn", "filterDiv", "show", day);
+        buttonItem.classList.add("btn-cards", "filterDiv", "show", day, "All");
         buttonItem.appendChild(artist);
         //add button to artist list
         artistList.appendChild(buttonItem);
