@@ -13,7 +13,7 @@
 <body>
 <header>
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">2021 Lollapalooza Guide</a>
+        <h1 class="" href="#">LollaGuide</h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,22 +40,39 @@
       </nav>
       
 </header>
-<div class="container-fluid">
-  <h1>Artists by Day</h1> 
-  <div class="input-group">
+<div class="container-fluid mt-4"> 
+  <p>View the artists of 2021 Lollapalooza through easy filters. Learn about their backgrounds, top hits, and latest release. </p>
+  <p>Sort by...</p>
+  <ul>
+    <li>Day of Performance</li>
+    <li>Artist Genre</li>
+  </ul>
+
+  <div class="input-group mb-3">
     <input type="text" placeholder="Search artists..." id="search" onfocus="enterSearch()">
     <div class="input-group-append">
-        <button class="btn-dark" onclick="filterSearch()">Search</button>
+        <button class=" btn-search" onclick="filterSearch()">Search</button>
+        <div class="btn-group">
+          <button type="button" class="btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort</button>    
+          
+          <div class="dropdown-menu dropdown-menu-right">
+            <button class="btn-light dropdown-item" onclick="filterSelection('All')">All Artists</button>
+            <h6 class="dropdown-header">Sort by Day</h6>
+            <button class="btn-light dropdown-item" onclick="filterSelection('Thursday')">Thursday</button>
+            <button class="btn-light dropdown-item" onclick="filterSelection('Friday')">Friday</button>
+            <button class="btn-light dropdown-item" onclick="filterSelection('Saturday')">Saturday</button>
+            <button class="btn-light dropdown-item" onclick="filterSelection('Sunday')">Sunday</button>
+            <h6 class="dropdown-header">Sort by Genre</h6>
+            <button class="btn-light dropdown-item" onclick="filterSelection('Thursday')">Genre</button>
+            <button class="btn-light dropdown-item" onclick="filterSelection('Friday')">Genre</button>
+            <button class="btn-light dropdown-item" onclick="filterSelection('Saturday')">Genre</button>
+            <button class="btn-light dropdown-item" onclick="filterSelection('Sunday')">Genre</button>
+          </div>
+      
+      </div>
     </div>
-  </div>
-  <p>View the artists of 2021 Lollapolooza, sorted by day of performance. </p>
-  <div class="btn-group">
-    <button class="btn" onclick="filterSelection('Thursday')">Thursday</button>
-    <button class="btn" onclick="filterSelection('Friday')">Friday</button>
-    <button class="btn" onclick="filterSelection('Saturday')">Saturday</button>
-    <button class="btn" onclick="filterSelection('Sunday')">Sunday</button>
-</div>
-  <div class="row" id="listBlock">
+  </div>  
+  <div class="row mt-3" id="listBlock">
       <div class="container-fluid" id="artistList">
       </div>
   </div>
